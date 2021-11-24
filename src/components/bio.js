@@ -31,26 +31,33 @@ const Bio = () => {
   const social = data.site.siteMetadata?.social
 
   return (
-    <div className="bio">
+    <div className="columns">
+      <div className="column is-one-fifth is-offset-one-third">
       <StaticImage
-        className="bio-avatar"
+        className="image is-rounded"
         layout="fixed"
         formats={["AUTO", "WEBP", "AVIF"]}
-        src="../images/profile-pic.png"
+        src="../images/q-profile-pic.jpg"
         width={50}
         height={50}
         quality={95}
         alt="Profile picture"
+        imgStyle={{
+          borderRadius: `50%`,
+        }}
       />
+      </div >
+      <div className='column is-one-third'> 
       {author?.name && (
-        <p>
+        <p >
           Written by <strong>{author.name}</strong> {author?.summary || null}
           {` `}
           <a href={`https://twitter.com/${social?.twitter || ``}`}>
             You should follow them on Twitter
           </a>
         </p>
-      )}
+        
+      )}</div>
     </div>
   )
 }

@@ -26,6 +26,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
+      <br></br>
       <div className='columns is-multiline'>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
@@ -57,7 +58,10 @@ const BlogIndex = ({ data, location }) => {
         })}
         
       </div>
-      <Bio />
+     
+      <br></br>
+      <br></br>
+      <br></br>
     </Layout>
   )
 }

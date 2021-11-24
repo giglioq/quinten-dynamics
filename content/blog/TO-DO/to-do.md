@@ -1,13 +1,7 @@
 ---
 title: To Do List for this website
 date: "2021-11-23"
-description: "To Do List-description
-- Fix Blog queries
-- Fill out side bar 
-- Touch up front page and header
-- Create skeleton for 
- - notes
- - projects
+description: "Things that need to be added, updated or altered regarding this website. 
 "
 ---
 
@@ -22,4 +16,5 @@ description: "To Do List-description
  - notes
  - projects
 - Stick Footer to bottom
+- Update Colors
 

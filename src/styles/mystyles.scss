@@ -15,16 +15,14 @@ $grey-dark: #0D0D0D;
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
 
-//$grey-dark: $brown;
-$grey-light: $grey;
-$primary: $orange;
-$link: $red;
-// $info: $cyan;
-// $success: $green;
+//$primary: $turquoise;
+//$link: $blue;
+//$info: $cyan;
+//$success: $green;
 //$warning: $yellow;
-$danger: $burnt;
-// $dark: $grey-darker;
-$text: $grey-dark;
+//$danger: $red;
+//$dark: $grey-darker;
+//$text: $grey-dark;
 
 $widescreen-enabled: false;
 $fullhd-enabled: false;
@@ -35,6 +33,19 @@ $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 
-$title-color: $red;
+$title-color: $grey-dark;
+
+
+.blog-post{
+    h1{
+        color: $red
+    }
+    h2{
+    color: $orange
+    }
+    h3{
+        color:$burnt
+    }
+};
 
 @import "~bulma/bulma.sass";

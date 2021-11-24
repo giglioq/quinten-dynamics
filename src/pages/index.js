@@ -26,26 +26,31 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
+      <br />
+      <div className="tile is-ancestor">
+        <div className="tile box">This is the front page.</div>
+      </div>
       <br></br>
-      <div className='columns is-multiline'>
+      <div className="columns is-multiline">
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
-            <div className='column is-one-third' key={post.fields.slug}>
-              <div
-                className="card"
-              >
-                <header className='card-header'>
-                  <h2 className='card-header-title'>
+            <div className="column is-one-third" key={post.fields.slug}>
+              <div className="card">
+                <header className="card-header">
+                  <h2 className="card-header-title">
                     <Link to={post.fields.slug} itemProp="url">
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
-                  <small className='card-header-icon'>{post.frontmatter.date}</small>
+                  <small className="card-header-icon">
+                    {post.frontmatter.date}
+                  </small>
                 </header>
-                <div className='card-content'>
-                  <p className='content'
+                <div className="card-content">
+                  <p
+                    className="content"
                     dangerouslySetInnerHTML={{
                       __html: post.frontmatter.description || post.excerpt,
                     }}
@@ -56,9 +61,8 @@ const BlogIndex = ({ data, location }) => {
             </div>
           )
         })}
-        
       </div>
-     
+
       <br></br>
       <br></br>
       <br></br>

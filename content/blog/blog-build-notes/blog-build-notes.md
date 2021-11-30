@@ -12,7 +12,7 @@ Changes needed for gatsby to be able to build
 ```
 Set-ExecutionPolicy -Scope LocalMachine Unrestricted
 ```
-
+```npm install -g yarn```
 
 # Cloud
 
